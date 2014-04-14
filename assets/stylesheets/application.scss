@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,700);
+
+// $visual-grid: true;
+
+@import 'bourbon/bourbon';
+@import 'bitters/bitters';
+@import 'neat/neat';
+@import 'header';
+@import 'categories_bar';
+@import 'main_section';
+@import 'comments_section';
+@import 'footer';
+
+* {margin:0;padding:0;}
+
+html, body {
+  @include clearfix;
+  font-family: 'Roboto', sans-serif;
+}
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>lifehacks.io</title>
+    <link rel="stylesheet" type="text/css" href="public/application.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="navigation">
+
+      <div class="menu-wrapper">
+        <a href="javascript:void(0)" class="logo">
+          <img src="assets/images/cocktail.png">
+          lifehacks
+        </a>
+
+        <div class="search-bar">
+          <div class="search-and-submit">
+            <input type="search" placeholder="Enter Search" />
+            <button type="submit">
+              <img src="https://raw.githubusercontent.com/Magnus-G/Random/master/search-icon-black.png" alt="">
+            </button>
+          </div>
+        </div>
+
+        <div class="nav">
+          <span id="navigation-menu">
+            <a href="#">Sign in</a>
+            <a href="#">Sign up</a>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <section class="categories-bar">
+      <div class="button-group">
+        <ul>
+          <li>TRENDING TOPICS:</li>
+          <li><a href="http://google.com">Food</a></li>
+          <li><a href="http://google.com">Life</a></li>
+          <li><a href="http://google.com">Work</a></li>
+      </ul>
+      </div>
+    </section>
+
+    <section class="main-section">
+
+      <div class="video">
+        <div class="title-stats">
+          <p class="video-title">A Century Egg</p>
+          <span class="video-score">17 Total points</span>
+          <span class="video-upvotes">20 Upvotes</span>
+          <span class="video-downvotes">3 Downvotes</span>
+          <p class="video-tags"><span class="video-tag">Tags: </span>eggs, food, century egg, Japan</p>
+        </div>
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/grxLCQqfqok?rel=0;3&amp;autohide=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="voting">
+        <a href="#" title="UPVOTE THIS LIFEHACK" class="voting-button"><img src="https://www.iconfinder.com/icons/173180/download/png/64"></a>
+        <a href="#" title="DOWNVOTE THIS LIFEHACK" class="voting-button"><img src="https://www.iconfinder.com/icons/173177/download/png/64"></a>
+        <a href="#" title="SHOW A RANDOM LIFEHACK" class="voting-button"><img src="https://www.iconfinder.com/icons/173088/download/png/64"></a>
+        <div class="description">
+          <p>A Century Egg, a duck egg that has been cured with an alkaline mixture of mud until it congeals into a dark very pungent smelling condiment. Sounds delicious, no? It is actually, if eaten properly. Join me as I share how I grew up eating pidan (Century/Thousand-Year-Old Egg) on Emmymade in Japan.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="comments">
+      <div class="comment">
+        <div class="comment-image">
+          <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_1.png" alt="">
+        </div>
+        <div class="comment-content">
+          <h1>First Comment Title or Author</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+          <p class="comment-detail">Date or details about this post</h2>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="comment-image">
+          <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_2.png" alt="">
+        </div>
+        <div class="comment-content">
+          <h1>Another One</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+          <p class="comment-detail">Date or details about this post</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      THIS IS THE FOOTER OF THE SITE
+    </section>
+
+    <script>
+      $(document).ready(function(){
+        $('.js-menu-trigger').on('click touchstart', function(e){
+          $('.js-menu').toggleClass('is-visible');
+          $('.js-menu-screen').toggleClass('is-visible');
+          e.preventDefault();
+        });
+
+        $('.js-menu-screen').on('click touchstart', function(e){
+          $('.js-menu').toggleClass('is-visible');
+          $('.js-menu-screen').toggleClass('is-visible');
+          e.preventDefault();
+        });
+        var menu = $('#navigation-menu');
+        var menuToggle = $('#js-mobile-menu');
+
+        $(menuToggle).on('click', function(e) {
+          e.preventDefault();
+          menu.slideToggle(function(){
+            if(menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
+
