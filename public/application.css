@@ -435,7 +435,6 @@ header.navigation {
             color: #4fc1e9; }
 
 .main-section {
-  padding-top: 40px;
   *zoom: 1;
   *zoom: 1;
   display: table;
@@ -487,8 +486,14 @@ header.navigation {
       .main-section .video .title-stats .video-tag {
         color: black; }
       .main-section .video .title-stats .video-tags {
-        font-size: .8em;
-        color: #d7dbc0; }
+        padding-top: 5px;
+        font-size: .7em; }
+        .main-section .video .title-stats .video-tags a {
+          background-color: rgba(0, 0, 0, 0.7);
+          padding: 3px;
+          border-radius: 3px; }
+        .main-section .video .title-stats .video-tags a:link, .main-section .video .title-stats .video-tags a:visited {
+          color: #babf9c; }
   .main-section .voting {
     display: table-cell;
     width: 33.33333%;
@@ -504,21 +509,23 @@ header.navigation {
       .main-section .voting .voting-button:hover {
         opacity: 0.8; }
     .main-section .voting .description {
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
-      border-bottom-left-radius: 3px;
-      border-bottom-right-radius: 3px;
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
       margin-left: 10px;
       background-color: rgba(0, 0, 0, 0.05);
       padding: 5px;
       top-padding: 10px;
       font-size: 1.5em;
       font-family: 'Roboto', sans-serif;
-      line-height: 110%; }
+      line-height: 110%;
+      height: 315px;
+      overflow-y: scroll; }
 
 #comments {
   *zoom: 1;
